@@ -1,10 +1,7 @@
 package com.example.maxim.myapplication
 
-import android.support.test.espresso.*
 import android.support.test.espresso.Espresso.onView
 import android.support.test.espresso.action.ViewActions
-import android.support.test.espresso.assertion.ViewAssertions
-import android.support.test.espresso.matcher.ViewMatchers
 import android.support.test.espresso.matcher.ViewMatchers.withId
 import android.support.test.rule.ActivityTestRule
 import android.support.test.runner.AndroidJUnit4
@@ -24,5 +21,17 @@ class SampleTest1 {
         onView(withId(R.id.enterMessage))
                 .perform(ViewActions.clearText())
                 .perform(ViewActions.typeText("Hello Kotlin!"))
+    }
+
+    @Test
+    @Throws(Exception::class)
+    fun testSendMessageButton() {
+
+    }
+
+    @Test
+    @Throws(Exception::class)
+    fun testSendEmail() {
+
     }
 }
